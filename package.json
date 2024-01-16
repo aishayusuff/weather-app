@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwind build ./src/input.css -o ./src/output.css --watch"
+    "build": "tailwind -i ./src/input.css -o ./src/output.css --watch"
   },
   "repository": {
     "type": "git",
