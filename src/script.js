@@ -1,7 +1,4 @@
-require('dotenv').config();
-
 const apiKey = process.env.API_KEY;
-const city = "Doha";
 const url = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=metric`;
 
 const searchInput = document.querySelector(".search");
@@ -33,7 +30,7 @@ const checksWeather = async function (city) {
     tempEl.classList.remove("opacity-0");
     humidityEl.classList.remove("opacity-0");
     windEl.classList.remove("opacity-0");
-  }, 1000);
+  }, 600);
 };
 
 //Updates checksWeather function with city searched in input
