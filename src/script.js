@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+const apiKey = process.env.API_KEY;
 const city = "Doha";
 const url = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=metric`;
 
