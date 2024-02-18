@@ -1,4 +1,5 @@
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.API_KEY; //added the env content to Netlify environment variable
+
 const url = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=metric`;
 
 const searchInput = document.querySelector(".search");
