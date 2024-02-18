@@ -1,6 +1,7 @@
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
 const { TailwindCSSWebpackPlugin } = require('tailwindcss-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -18,6 +19,9 @@ module.exports = {
       ],
     },
     plugins: [
+      new HtmlWebpackPlugin({
+        template: './src/index.html', // Path to your HTML template
+      }),
       new TailwindCSSWebpackPlugin({
         configFile: './tailwind.config.js',
       }),
