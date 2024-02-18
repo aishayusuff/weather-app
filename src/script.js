@@ -37,3 +37,10 @@ const checksWeather = async function (city) {
 searchBtn.addEventListener("click", () => {
   checksWeather(searchInput.value);
 });
+
+//Updates checksWeather function with city searched when ENTER key pressed
+document.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    checksWeather(searchInput.value);
+  }
+});
