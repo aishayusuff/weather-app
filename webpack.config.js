@@ -2,6 +2,7 @@ const path = require('path');
 const Dotenv = require('dotenv-webpack');
 const { TailwindCSSWebpackPlugin } = require('tailwindcss-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -30,6 +31,11 @@ module.exports = {
         configFile: './tailwind.config.js',
       }),
       new Dotenv(),
+      new CopyPlugin({ // Add CopyPlugin configuration
+        patterns: [
+          { from: 'src/output.css', to: 'output.css' }, // Copy output.css from src to dist
+        ],
+      }),
     ],
     
   };
