@@ -14,7 +14,11 @@ module.exports = {
       rules: [
         {
           test: /\.css$/,
-          use: ['css-loader'],
+          use: [
+            'style-loader', // Inject CSS into the DOM
+            'css-loader',   // Interprets `@import` and `url()` like `import/require()` and resolves them
+            'postcss-loader' // Process CSS with PostCSS
+          ],
         },
       ],
     },
