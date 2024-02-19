@@ -1,6 +1,5 @@
 const apiKey = process.env.API_KEY; //added the env content to Netlify environment variable
-console.log(API_KEY)
-console.log(process.env.API_KEY)
+console.log(apiKey)
 
 const url = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=metric`;
 
