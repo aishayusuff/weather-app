@@ -4,6 +4,8 @@ const { TailwindCSSWebpackPlugin } = require('tailwindcss-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
+//To trigger a netlify rebuild
+
 
 module.exports = {
     entry: './src/script.js',
