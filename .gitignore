@@ -1,3 +1,6 @@
 node_modules/
 .env
 dist/
+bundle.js
+index.html
+output.css
