@@ -53,5 +53,5 @@ Finally, open the `index.html` file (in the **src** directory) on your preferred
 - Click the **search** button or press **Enter** key to fetch and display the weather information for the entered city/country.
 
 ## Limitations
-- Due to security concerns, the app does not deploy to platforms like Netlify, as protecting the API key in a .env file is challenging in that environment.
+- I could not deploy the app to Netlify, as protecting the API key in the `.env` file, while exposing it in the `script.js` file was quite challenging in a client-side environment. Ultimately, I decided that spending that much time may be unfit for the small scale of this project.
 - Currently, if the user inputs a name that is not a recognized city or country, the app will not provide weather information. This is an area for improvement, and future iterations of the app could include better error handling and suggestions for valid city or country names.
