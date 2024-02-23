@@ -48,6 +48,10 @@ Build your project locally using the command:
 Finally, open the `index.html` file (in the **src** directory) on your preferred brower. The project was originally built using Google Chrome browser.
 
 
+## Usage
+- Enter the name of the **city/country** whose weather you want to check in the search input field.
+- Click the **search** button or press **Enter** key to fetch and display the weather information for the entered city/country.
+
 ## Limitations
 - Due to security concerns, the app does not deploy to platforms like Netlify, as protecting the API key in a .env file is challenging in that environment.
 - Currently, if the user inputs a name that is not a recognized city or country, the app will not provide weather information. This is an area for improvement, and future iterations of the app could include better error handling and suggestions for valid city or country names.
