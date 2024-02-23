@@ -1,6 +1,3 @@
-const url = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=metric`;
-
-
 const searchInput = document.querySelector(".search");
 const searchBtn = document.querySelector(".search-btn");
 const cityEl = document.querySelector(".city");
