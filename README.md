@@ -22,6 +22,11 @@ __Weather App__ is a simple vanilla JavaScript application that enables users to
 
 ## Getting Started
 
+### Clone the Repository
+Clone the repository and change directory into the program folder:
+
+    git clone https://github.com/aishayusuff/weather-app.git
+    cd weather-app
 
 
 
