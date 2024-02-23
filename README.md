@@ -5,7 +5,7 @@ __Weather App__ is a simple vanilla JavaScript application that enables users to
 - [Features](#features)
 - [Technology Used](#technology-used)
 - [Getting Started](#getting-started)
-- [Running Program](#running-program-)
+- [Limitations](#limitations)
 
 ## Features
 - Search for weather information by **city/country** name
@@ -21,6 +21,7 @@ __Weather App__ is a simple vanilla JavaScript application that enables users to
 - Webpack for bundling assets
 
 ## Getting Started
+__Weather App was built using windows so remember to modify the commands according to your local environment.
 
 ### Clone the Repository
 Clone the repository and change directory into the program folder:
@@ -30,7 +31,23 @@ Clone the repository and change directory into the program folder:
 
 ### Install Dependencies
 Use the command below to install the neccessary dependencies for this app:
+
     npm install
-    
+  
+### Create a `.env` file in the root directory and add your OpenWeatherMap API key:
+Open an account on [OpenWeatherMap API](https://openweathermap.org/) and obtain your API key - which you can then store in the `.env` file: 
+
+    API_KEY = "your_api_key"
+
+### Build Project
+Build your project locally using the command:
+
+    npm run build
+
+### Launch Project
+Finally, open the `index.html` file (in the **src** directory) on your preferred brower. The project was originally built using Google Chrome browser.
 
 
+## Limitations
+- Due to security concerns, the app does not deploy to platforms like Netlify, as protecting the API key in a .env file is challenging in that environment.
+- Currently, if the user inputs a name that is not a recognized city or country, the app will not provide weather information. This is an area for improvement, and future iterations of the app could include better error handling and suggestions for valid city or country names.
