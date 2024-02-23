@@ -1,7 +1,6 @@
 node_modules/
 .env
 dist/
-server/
 bundle.js
 index.html
 output.css
