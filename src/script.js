@@ -1,6 +1,3 @@
-const apiKey = process.env.API; //added the env content to Netlify environment variable
-console.log(apiKey)
-
 const url = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=metric`;
 
 
@@ -12,7 +9,7 @@ const humidityEl = document.querySelector(".humidity");
 const windEl = document.querySelector(".wind");
 
 const checksWeather = async function (city) {
-  const response = await fetch(`${url}&q=${city}`);
+  const response = await fetch(`/weather?city=${city}`);
   const data = await response.json();
 
   //Adds opacity to target elements for transition effects
