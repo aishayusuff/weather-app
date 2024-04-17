@@ -10,6 +10,9 @@ const tempEl = document.querySelector(".temp");
 const humidityEl = document.querySelector(".humidity");
 const windEl = document.querySelector(".wind");
 
+
+
+
 const checksWeather = async function (city) {
   const response = await fetch(`${url}&q=${city}`);
   const data = await response.json();
@@ -33,6 +36,8 @@ const checksWeather = async function (city) {
     humidityEl.classList.remove("opacity-0");
     windEl.classList.remove("opacity-0");
   }, 600);
+
+  searchInput.value = '';
 };
 
 //Updates checksWeather function with city searched in input
